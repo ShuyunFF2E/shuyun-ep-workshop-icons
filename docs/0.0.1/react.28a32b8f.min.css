@@ -1,0 +1,108 @@
+.container {
+  color: #666;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Monaco"; }
+
+.header {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.group-select {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media (max-width: 786px) {
+  .header {
+    display: block !important;
+    margin-bottom: 20px; }
+  .profile {
+    width: initial !important; }
+  .group-select {
+    text-align: center !important;
+    display: block !important; }
+  .icons {
+    margin: 0 !important; }
+    .icons .icon-box {
+      width: 30%; } }
+
+.profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 0;
+  margin: 20px;
+  -webkit-user-select: initial;
+     -moz-user-select: initial;
+      -ms-user-select: initial;
+          user-select: initial; }
+  .profile > a {
+    margin: 10px 5px; }
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 80px; }
+
+.icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  margin: 20px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid transparent; }
+  .icon-box:hover {
+    cursor: pointer;
+    background: #e8e8e8;
+    border-color: #d8d8d8; }
+  .icon-box .name {
+    font-size: 14px;
+    margin-top: 10px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 20px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 10px; }
+
+.toast-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.toast {
+  margin: 10px auto 0;
+  display: inline-block;
+  padding: 6px 12px;
+  background: #444;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 14px; }
+
